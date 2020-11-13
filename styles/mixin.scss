@@ -1,0 +1,33 @@
+@mixin shadow{
+-webkit-box-shadow: 8px 14px 29px 0px rgba(0,0,0,0.32); 
+box-shadow: 8px 14px 29px 0px rgba(0,0,0,0.32);
+}
+
+@mixin fonts ( $size, $textcol){
+	font-family: $fontFamily;
+	font-size: $size;
+	color: $textcol;
+}
+
+@mixin buttons ($radius, $color) {
+	background-color: $color;
+	border-radius: $radius;	
+}
+
+@mixin coloredLine($right, $bottom) {
+  background-color: $commonPink;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  width: 5%;
+  bottom: $bottom;
+  right: $right;
+
+}
+
+@mixin textUp {
+	@include fonts(30px, $black);
+	font-weight: 700;
+	margin-top: 2%;
+}
