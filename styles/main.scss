@@ -9,29 +9,22 @@ body{
 	@include fonts($white, 16px);
 	margin: 0 auto;
 	position: relative;
-	
 }
-
 .button{
 	@include fonts (16px, $white);
 	padding: 10px;
 	width: 15%;
 	font-weight: 700;
 }
-
 .red{
 	color:$red;
 }
-
-
 .header{
 	width: 100%;
 	height: 600px;
 	background: linear-gradient(rgba(0, 0, 0, 0.5)), url('../assets/hero_demo.jpg');
 	background-size: cover;
 	position: relative;
-
-
 	.header-logo{
 		width: 11%;
 		margin-left: 2%;
@@ -39,7 +32,6 @@ body{
 		position: absolute;
 		z-index: 2;
 	}
-	
     .header-text{
 	width: 100%;
 	height: 100%;
@@ -48,49 +40,40 @@ body{
 	justify-content: center;
 	align-items: center;
 	line-height: 1.2;
-
 	.header-name{
 		@include fonts (40px, $white);
 	}
-
 	.header-description-one, .header-description-two{
 		@include fonts (32px, $white);
 	}
-
 	.header-buttons{
 		
 	    display: flex;
 		justify-content: center;
 		margin-top: 4%;
 		width: 100%;
-		
 		.header-main{
 			@include buttons (5%, $commonPink);
 			margin-right: 1px;
-			
 		}
 		.header-others{
 			@include buttons (5%, transparent);
 			border: 2px solid $white;
-			margin-left: 1px;
-			
+			margin-left: 1px;	
 		}
 	}
     }
 }
-
 .main{
 	padding-top: 3%;
 	margin: 0 auto;
 	margin-bottom: 5%;
 	width: 80%;
 	flex-direction: column;
-
   .main-text{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-
   .main-text-up{
 	  @include textUp;
 	  padding-top: 2%;
@@ -103,7 +86,6 @@ body{
 		@include coloredLine(48%, 77%);
 	}
 }
-
   .main-text-bottom{
 	  @include fonts(20px, $textGrey);
 	  margin-top: 1%;
@@ -115,44 +97,35 @@ body{
 	width: 100%;
 	flex-wrap: wrap;
 	margin-top: 2%;
-
    .main-row-block-item{
 	  width: 30%;
 	  margin: 1%;
 	  display: flex;
 	  flex-direction: column;
 	  align-items: center;
-	  
-	
-
 	.main-demo-img{
 		overflow: hidden;
 		height: 450px;
 		@include shadow;
 		margin-bottom: 10%;
 		border-radius: 2%;
-
 		.main-row-block-item-img{
 			width: 100%;
 		}
 	}
-	
 	.main-row-block-item-text{
 		@include fonts(16px, $black);
-		font-weight: 700;
-		
+		font-weight: 700;	
 	}
 }
 }
 }
-
 .footer{
 	@include fonts(30px, $black);
 	text-align: center;
 	background-color: $commonGrey;
 	position: relative;
 	width: 100%;
-	
 	.footer-text-up{
 		@include textUp;
 		padding-top: 5%;
@@ -165,29 +138,24 @@ body{
 			@include coloredLine(48%, 91%);
 		}
 	}
-
 	.footer-slider{
 		display: flex;
 		justify-content: center;
 		margin-top: 3%;
-
 		.footer-slider-item{
 			display: flex;
 			justify-content: center;
-
 		img{
 			width: 97%;
 		}
 	}
 	}
-
 	.footer-second{
 		@include fonts(10px, $textGrey);
 		width: 100%;
 		background-color: $white;
 		padding-top: 2%;
 		padding-bottom: 5%;
-
 		#button {   
 			display: inline-block;   
 			background-color: $textGrey;   
@@ -200,7 +168,6 @@ body{
 			bottom: 25px;   
 			right: 25px;   
 			transition: background-color .3s;   
-
 		 } 
 		 #button:hover {   
 			cursor: pointer;   
@@ -219,7 +186,6 @@ body{
 			color: $white; 
 		 } 
 	}
-	
 }
 
 @media screen and (max-width: 767px){
@@ -233,14 +199,12 @@ body{
 			text-align: center;
 		}
 	}
-
 	.button{
 		@include fonts (16px, $white);
 		padding: 10px;
 		width: 25%;
 		font-weight: 700;
 	}
-
 	.main{
 	.main-text{
 		.main-text-up{
@@ -261,7 +225,6 @@ body{
 		  line-height: 1.5;
 	}	
 	}
-
 	.main-row{
 		display: flex;
 		justify-content: center;
@@ -280,8 +243,6 @@ body{
 		  }
 		}
 	}
-
-
 .footer{
 	.footer-text-up{
 		&::before{
@@ -294,7 +255,6 @@ body{
 			width: 7%;
 		}
 	}
-
 .footer-second{
 	#button{
 		display: none;
@@ -323,7 +283,6 @@ body{
 		width: 40%;
 	}
 	}
-
 .main{
 	width: 100%;
 	.main-text{
@@ -344,8 +303,6 @@ body{
 			font-size: 23px;
 	  }	
 		}
-	
-	  
 	  .main-row{
 		.main-row-block-item{
 			width: 98%;
