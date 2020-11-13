@@ -2,7 +2,7 @@ $('.footer-slider').slick({
 	dots: true,
 	responsive: [
 		{
-			breakpoint: 1890,
+			breakpoint: 3000,
 			settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3,
